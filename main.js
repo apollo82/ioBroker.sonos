@@ -1953,9 +1953,9 @@ function processSonosEvents(event, data) {
     return;
   }
 
-  console.log("event: " + event);
-  console.log("data to json: ");
-  console.log(JSON.stringify(data));
+  adapter.log.info("event: " + event);
+  adapter.log.info("data to json: ");
+  adapter.log.info(JSON.stringify(data));
 
   if (event === "topology-change") {
     // TODO: Check
